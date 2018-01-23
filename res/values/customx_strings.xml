@@ -178,4 +178,7 @@
     <string name="app_lock">App Lock</string>
     <string name="app_lock_summary">Secure some private app</string>
 
+    <!-- Manage applications, package string displayed in app snippet -->
+    <string name="packagename_text"><xliff:g id="package_name">%1$s</xliff:g></string>
+
 </resources>
