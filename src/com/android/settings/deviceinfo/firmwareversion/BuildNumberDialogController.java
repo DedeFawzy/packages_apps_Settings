@@ -45,10 +45,10 @@ public class BuildNumberDialogController {
         
         StringBuilder sb = new StringBuilder();
         sb.append(BidiFormatter.getInstance().unicodeWrap(Build.DISPLAY));
-        String pixelExperienceVersion = BuildNumberPreferenceController.getPixelExperienceVersion();
-        if (!pixelExperienceVersion.equals("")){
+        String CesiumOSVersion = BuildNumberPreferenceController.getCesiumOSVersion();
+        if (!CesiumOSVersion.equals("")){
             sb.append("\n");
-            sb.append(pixelExperienceVersion);
+            sb.append(CesiumOSVersion);
         }
         sb.append("\n");
         sb.append(DeviceModelPreferenceController.getDeviceModel());

@@ -87,10 +87,10 @@ public class BuildNumberPreferenceController extends AbstractPreferenceControlle
             try {
                 StringBuilder sb = new StringBuilder();
                 sb.append(BidiFormatter.getInstance().unicodeWrap(Build.DISPLAY));
-                String pixelExperienceVersion = getPixelExperienceVersion();
-                if (!pixelExperienceVersion.equals("")){
+                String CesiumOSVersion = getCesiumOSVersion();
+                if (!CesiumOSVersion.equals("")){
                     sb.append("\n");
-                    sb.append(pixelExperienceVersion);
+                    sb.append(CesiumOSVersion);
                 }
                 preference.setSummary(sb.toString());
                 preference.setEnabled(true);
@@ -100,10 +100,10 @@ public class BuildNumberPreferenceController extends AbstractPreferenceControlle
         }
     }
 
-    public static String getPixelExperienceVersion(){
-        String buildDate = SystemProperties.get("org.pixelexperience.build_date","");
-        String buildType = SystemProperties.get("org.pixelexperience.build_type","unofficial").toUpperCase();
-        return buildDate.equals("") ? "" : "PixelExperience-Plus-" + buildDate + "-" + buildType;
+    public static String getCesiumOSVersion(){
+        String buildDate = SystemProperties.get("org.cesium.build_date","");
+        String buildType = SystemProperties.get("org.cesium.build_type","unofficial").toUpperCase();
+        return buildDate.equals("") ? "" : "CesiumOS-" + buildDate + "-" + buildType;
     }
 
     @Override
