@@ -174,4 +174,8 @@
     <string name="adj_intensity_title">Intensity</string>
     <string name="adj_contrast_title">Contrast</string>
 
+    <!-- applock strings -->
+    <string name="app_lock">App Lock</string>
+    <string name="app_lock_summary">Secure some private app</string>
+
 </resources>

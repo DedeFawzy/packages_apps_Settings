@@ -154,4 +154,9 @@
     <string name="adj_saturation_title">Saturasi</string>
     <string name="adj_intensity_title">Intensitas</string>
     <string name="adj_contrast_title">Kontras</string>
+
+    <!-- applock strings -->
+    <string name="app_lock">Kunci Aplikasi</string>
+    <string name="app_lock_summary">Amankan aplikasi bersifat pribadi</string>
+
 </resources>
