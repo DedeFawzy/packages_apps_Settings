@@ -108,6 +108,18 @@
             android:summary="@string/show_password_summary"
             settings:controller="com.android.settings.security.ShowPasswordPreferenceController"/>
 
+        <Preference
+            android:key="applock"
+            android:title="@string/app_lock"
+            android:summary="@string/app_lock_summary">
+
+            <intent
+                android:targetPackage="io.github.subhamtyagi.privacyapplock"
+                android:action="android.intent.action.MAIN"
+                android:targetClass="com.lzx.lock.activities.main.SplashActivity" />
+
+         </Preference>
+
     </PreferenceCategory>
 
     <PreferenceCategory
